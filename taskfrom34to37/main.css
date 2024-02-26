@@ -1,0 +1,110 @@
+div{
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+div:empty{
+    background-color: #cf2e2e ;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.one{
+
+    background-color: #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.one::first-letter{
+
+    color: white;
+    padding: 10px;
+    background-color: #cf2e2e;
+    top: 50%;
+    position: absolute;
+    float: left;
+    margin-left: -35px;
+    margin-top: -10px;
+
+}
+
+/*------------------------------------------------------------------------------------*/
+
+ .two p{
+    background-color: #eee;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-left: -30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    border-left: 6px rgb(238, 44, 130) solid;
+    position: relative;
+    left: -42px;
+}
+
+.two p::before{
+
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 15px;
+    border-style: solid;
+    border-color:transparent rgb(238, 44, 130) transparent transparent;
+    position: relative;
+    float: left;
+    left: -57px;
+    top: 14px;
+   
+}
+
+.two p::after{
+    content: attr(data-person);
+    background-color: #eee;
+    position: absolute;
+    left: -95px;
+    padding: 10px;
+    top: 12px;
+    width: 50px;
+}
+
+/* ----------------------------------------------------------------------------------*/
+
+.parent{
+    margin-top: 350px;
+}
+
+.parent p{
+    width: 400px;
+    padding: 20px;
+    font-weight: bold;
+    position: relative;
+    background-color: #ddd;
+    border-right:5px #cf2e2e solid;
+    counter-increment: num;
+}
+
+.parent p::before{
+    content: counter(num);
+    background-color: #cf2e2e;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    float: left;
+    left: 0;
+    top:0 ;
+
+}

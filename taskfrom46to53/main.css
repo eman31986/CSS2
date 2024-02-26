@@ -1,0 +1,220 @@
+._one{
+    background-color: #eee; 
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid rgba(6, 147, 227, 1);
+    border-right:5px solid rgba(255, 105, 0, 1);
+    color: rgba(255, 105, 0, 1);
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.parent{
+    padding: 10px;
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-content: space-between;
+
+}
+
+.parent div{
+    display: flex;
+    color: white;
+    background-color: rgb(254, 45, 45) ;
+    width: calc(95% / 3);
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.parent1{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.parent1 div{
+    background-color: #507d8b;
+    color: white;
+    width: calc(95% / 3);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent1 .one{
+    order: 6;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.parent1 .two{
+    order: 5;
+}
+
+.parent1 .three{
+    order: 2;
+    height: 40px;
+}
+
+.parent1 .four{
+    order: 3;
+}
+
+.parent1 .five{
+    order: 4;
+}
+
+.parent1 .six{
+    order: 1;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.parent2{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    background-color: #eee;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.parent2 div{
+    color: white;
+    background-color: #009688;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(95% / 3);
+    width: 5%;
+}
+
+.parent2 .two2{
+    align-self:flex-start;
+    width: 50%;
+}
+
+/*---------------------------------------------------------------*/
+
+.parent3{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.parent3 div{
+    color: white;
+    width:calc(80% / 4) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.parent3 .One{
+   order: 2 ;
+   background-color:#ff6900 ;
+
+}
+
+.parent3 .Two{
+    order:3 ;
+    background-color: rgb(139, 201, 47) ;
+    align-self: flex-end;
+ }
+
+ .parent3 .Three{
+    order:4 ;
+    background-color: rgb(121 85 72);
+ }
+
+
+ .parent3 .Four{
+    order: 1;
+    background-color: rgb(155, 81, 224) ;
+    align-self: flex-end;
+ }
+
+ /*-----------------------------------------------------------------------------------------*/
+
+ :root{
+    --backgroung-color: #ccc;
+    --margin: 10px;
+    --pading: 10px;
+ }
+
+ .page{
+    background-color:#eee;
+    overflow: hidden;
+ }
+
+ .header{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .logo,
+ .links{
+    background-color:var(--backgroung-color) ;
+    margin: var(--margin);
+    padding: var(--pading);
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 6);
+    height: 40px;
+ }
+ 
+ .links{
+    justify-content: flex-end;
+    list-style-type: none;
+ }
+ .links li{
+    padding-left: 20px;
+ }
+
+ .main-area{
+    display: flex;
+    justify-content: space-between;  
+ }
+.main-area div{
+    background-color: var(--backgroung-color);
+    margin: var(--margin);
+    padding: var(--pading);
+    height: 400px;
+    width: calc(100% / 5);
+}
+
+.footer{
+    background-color: var(--backgroung-color);
+    margin: var(--margin);
+    padding: var(--pading);
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+.one{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: #eee;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    position: static;
+}
+
+.one:hover{
+    margin-top: 30px;
+}
+
+.two{
+    background-color: #ccc;
+    padding: 20px;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.one:hover .two{
+    margin-top: 30px;
+}
+
+/*-----------------------------*/
+
+.three{
+
+    width: 400px;
+    margin: auto;
+    background-color: #eee !important;
+    color: black !important;
+    font-size: 20px !important;
+    border: none !important;
+    position: relative;
+    text-align: -40000px;
+}
+.three::after{
+ 
+    content: "Elzero";
+    position: absolute;
+    left: 30184px;
+}
+
+/*---------------------------------*/
+
+/*:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }*/
+  
+ .four div {
+     margin: auto;
+     margin-bottom: 20px;
+     padding: var(--mainPadding,20px);
+     color: var(--mainColor,red);
+     border: 3px solid var(--mainColor,black);
+     width: 400px;
+  }
